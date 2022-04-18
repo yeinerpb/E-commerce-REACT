@@ -88,7 +88,7 @@ export const loginThunk = credentials => {
 export const addCartThunk = (product) => {
     return dispatch => {
         dispatch(setIsLoading(true));
-        return axios.post('https://ecommerce-api-react.herokuapp.com/api/v1/cart', product, getConfig())
+        return axios.post('https://ecommerce-api-react.herokuapp.com/api/v1/cart', product,{}, getConfig())
             .finally(() => dispatch(setIsLoading(false)));
     }
 }

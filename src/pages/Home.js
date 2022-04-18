@@ -66,8 +66,8 @@ const Home = ({product}) => {
                                         
                                         {productsItem.price}
                                     </div>
-                                    <button className='cart-button' onClick={() => dispatch(addCartThunk(product, 1))}>
-                                        <i className="fa-solid fa-cart-arrow-down"></i>
+                                    <button className='cart-button' onClick={() => dispatch(addCartThunk(product,1))}>
+                                    <i className="fa-solid fa-cart-arrow-down"></i>
                                     </button>
                                 </li>
 
