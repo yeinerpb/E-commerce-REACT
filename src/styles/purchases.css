@@ -1,0 +1,56 @@
+.purchases-modal{
+    background-color: #fff;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.purchases-modal h2{
+    text-align: left;
+    margin: 50px;
+}
+
+.purchases-modal .date{
+    background-color: aqua;
+    margin: 20px;
+    color: #515151;
+    
+}
+.info{
+    cursor: pointer;
+    margin-bottom: 20px;
+    list-style: none;
+    
+}
+.articles{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.articles .name{
+    font-size: 1.2rem;
+    width: 40%;
+}
+
+.articles .quanity{
+    width: 60px;
+    padding: 0 10px;
+    width: 23%;
+}
+.articles .quanity .box{
+    border: 1px solid var(--light-gray);
+    text-align: center;
+    max-width: 65px;
+    margin: 0 auto;
+
+}
+
+
+.articles .price{
+    width: 17%;
+    text-align: center;
+}
+
+
+
+

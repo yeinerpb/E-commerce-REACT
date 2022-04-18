@@ -1,0 +1,11 @@
+.products-detail{
+    margin: 30px;
+
+}
+.products-link{
+    text-decoration: none;
+    margin: 30px;
+}
+.detail-products{
+    display: flex;
+}

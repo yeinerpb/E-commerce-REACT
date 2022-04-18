@@ -1,0 +1,52 @@
+
+.images img{
+    width: 20%;
+    margin: 20px;
+  }
+ 
+  .products-list li{
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .search{
+      margin: 20px;
+  }
+
+  .list{
+    list-style: none;
+    margin-bottom: 80px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    padding: 30px;   
+    width: 50%;
+
+  }
+
+ 
+  .price-home{
+    font-size: 20px;
+      color: black;
+
+      
+
+  }
+  .link-home{
+        text-decoration:none;
+  }
+
+  .list strong{
+      font-size: 20px;
+      color: rgb(87, 87, 87);
+  }
+
+  .list button{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      font-size: 30px;
+      border: none;
+      margin-top: 20px;
+      background-color: rgb(243, 52, 52);
+      color: white;
+  }

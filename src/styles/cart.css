@@ -1,0 +1,23 @@
+
+.carts-modal{
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    padding: 50px;
+    width: 250px;
+    transform: translateX(350px);
+    transition: 1s;
+    overflow: auto;
+}
+.open{
+    transform: translateX(0);
+}
+.carts-modal .cart-list{
+    list-style: none;
+}
+.carts-modal .cart-list li{
+    margin-bottom: 20px;
+}

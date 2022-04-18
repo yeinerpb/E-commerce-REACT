@@ -1,0 +1,126 @@
+/*.navbar{
+    height: 60px;
+}
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+.navbar .fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.navbar nav .title{
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.5rem;
+    flex: 1;
+    display: block;
+    padding: 14px 20px;
+}
+.navbar nav .title strong{
+    cursor: pointer;
+    color: inherit;
+}
+.navbar nav .icon{
+    width: 15%;
+    text-align: center;
+    padding: 14px;
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    color: var(--text-gray);
+    line-height: 0;
+}
+
+
+
+.login{
+    position: absolute;
+    bottom: -70 px;
+    padding: 80 px;
+    background: #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    transform: scale(0);
+    transition: .6s;
+    transform-origin: top;
+}
+.login.open{
+   transform: scale(1); 
+}
+.button-login{
+    height: 40px;
+}
+*/
+
+.navbar{
+    height: 60px;
+}
+
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.navbar .fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.navbar nav .title{
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 2rem;
+    flex: 1;
+    display: block;
+    padding: 14px 20px;
+}
+
+.navbar nav .title strong{
+    cursor: pointer;
+    color: inherit;
+}
+
+.navbar nav .icon{
+    width: 15%;
+    text-align: center;
+    padding: 14px;
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    color: var(--text-gray);
+    line-height: 0;
+    cursor: pointer;
+}
+
+.cart-modal.open{
+    right: 0;
+}
+
+.login{
+    margin-right: 24%;
+    background: rgb(247, 85, 85);
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 200px;
+    position: fixed;
+    right: 10px;
+    transform: scale(0);
+    transform-origin: top;
+    transition: .5s ease-in-out;
+    z-index: 9;
+    max-height: 90vh;
+}
+
+.login .open{
+    transform: scale(1);
+}
+
