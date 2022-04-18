@@ -16,12 +16,12 @@ const Products = ({ images = [] }) => {
     const products = useSelector(state => state.products)
 
     const [currentImage, setCurrentImage] = useState(1);
-    const percent = 100 / images.length;
+    {/*const percent = 100 / images.length;
 
-    const listStyles = {
+    {const listStyles = {
         width: `${100 * images.length}%`,
         transform: `translateX(-${(currentImage - 1) * percent}%)`
-    }
+    }}*/}
 
     useEffect(() => dispatch(getProductsThunk()), [dispatch]);
 
