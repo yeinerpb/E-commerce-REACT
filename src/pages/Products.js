@@ -114,22 +114,29 @@ const Products = ({ images = [] }) => {
 
                 <div className='data-products'>
                     <h1>{productsFound?.title}</h1>
-                    <p>{productsFound?.description}</p>
+                    <p className='description'>{productsFound?.description}</p>
 
                     <div className="quantity">
+                        <p>Price: <br /> {productsFound?.price}</p>
+
                         <div className="label">Quantity</div>
+
                         <div className="flex">
+
                             <button
                                 onClick={() => setQuantity(quantity - 1)}
                                 disabled={quantity <= 1}
                             >
-                                <i className="icon-minus"></i>
+                                <i className="fa-solid fa-minus"></i>
                             </button>
-                            <div className="value">
-                                {quantity}
+                            <div
+                                className="value">
+                                <button className='number-quantity'>
+                                    {quantity}
+                                </button>
                             </div>
                             <button onClick={() => setQuantity(quantity + 1)}>
-                                <i className="icon-plus"></i>
+                                <i className="fa-solid fa-plus"></i>
                             </button>
 
                         </div>
@@ -138,15 +145,15 @@ const Products = ({ images = [] }) => {
 
 
                     <button className="add-cart-button" onClick={addCart}>
-                        Add to cart <i className='icon-shopping-cart'></i>
+                        Add to cart   <i className="fa-solid fa-cart-arrow-down"></i>
                     </button>
 
                 </div>
 
             </div>
 
-            <ul>
-                <strong>
+            <ul className='other-products'>
+                <strong className='discover'>
                     Discover similar items
                 </strong>
                 {
@@ -164,8 +171,9 @@ const Products = ({ images = [] }) => {
 
                             </Link>
                             <div className="suggestions">
-
-
+                                <button onClick={addCart}>
+                                    <i className="fa-solid fa-cart-arrow-down"></i>
+                                </button>
                             </div>
 
                         </li>
